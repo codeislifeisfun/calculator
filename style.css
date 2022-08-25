@@ -26,7 +26,7 @@ body {
     flex-direction: column;
 }
 
-.symbols {
+.symbols, .equals {
     background-color: aqua;
 }
 
@@ -34,12 +34,12 @@ body {
     width: 300px;
     margin: auto;
     display: flex;
-    border-radius: 8px;
-    margin-bottom: 2vh;
 }
 
-.clear > button {
+.btn-clear {
     flex: 1;
+    border-radius: 8px;
+    margin-bottom: 2vh;
     background-color: rgba(212, 135, 106, 0.6);
     color: aliceblue;
 }

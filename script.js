@@ -30,9 +30,7 @@ function listenForEquals(userInput) {
     screen.textContent = numResult;
 }
 */
-function listenForOperator(userInput) {
-    let result = 0;
-    
+function listenForOperator(userInput) {    
     if (userInput.className === 'symbols') {
         nextOperation = userInput.textContent;
         operatorActive = true;
@@ -48,8 +46,7 @@ function listenForOperator(userInput) {
             numResult = ''
             num1 = '';
             activeOperation = nextOperation;
-        }         
-
+        }
     }
 }
 
@@ -72,12 +69,12 @@ function listenForNumber(userInput) {
 
 function listenForClear(userInput) {
     if (userInput.className === 'btn-clear') {
-        let numResult = '';
-        let num1 = '';
-        let num2 = '';
-        let activeOperation = '';
-        let nextOperation = '';
-        let operatorActive = false;
+        numResult = '';
+        num1 = '';
+        num2 = '';
+        activeOperation = '';
+        nextOperation = '';
+        operatorActive = false;
         screen.textContent = '0';
     }
 }
